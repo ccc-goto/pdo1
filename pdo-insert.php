@@ -1,9 +1,10 @@
-﻿<?php
+<?php
 $dsn = 'mysql:dbname=lesson1;host=localhost;charset=utf8';
-$user = 'root';
-$password = '';
-$name = '山本太郎';
-$age = 24;
+$user = 'root';       //MySQL接続ユーザー名
+$password = '';       //MySQL接続パスワード
+$name = '山本太郎';    //テーブルへの追加データ：名前
+$age = 24;            //テーブルへの追加データ：年齢
+
 try{
     $dbh = new PDO($dsn, $user, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
