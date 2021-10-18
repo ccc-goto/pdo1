@@ -14,3 +14,4 @@ try {
     print('接続失敗:'.$e->getMessage());
     die();
 }
+?>
